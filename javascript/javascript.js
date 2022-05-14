@@ -3,7 +3,7 @@ function spawnGrid(){
 
         let container = document.createElement("div");
         container.classList.add("column");
-        document.querySelector("body").appendChild(container);
+        document.querySelector(".container").appendChild(container);
 
         
     }

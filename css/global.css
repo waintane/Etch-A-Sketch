@@ -5,14 +5,19 @@
 }
 
 .column{
-    width: 20px;
-    height: 320px;
+    width: 21px;
+    height: 336px;
     display: flex;
     flex-direction: column;
     
 }
 
-body{
+.container{
     display: flex;
     flex-direction: row;
+    width: 336px;
+}
+body{
+    display: flex;
+    justify-content: center;
 }
