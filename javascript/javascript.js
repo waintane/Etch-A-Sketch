@@ -1,4 +1,6 @@
-function spawnGrid(){
+//gestion de la grid
+function spawnGrid(dimension){
+    //faire apparaitre les containers verticale
     for(i=0 ; i <= 16; i++){
 
         let container = document.createElement("div");
@@ -10,6 +12,7 @@ function spawnGrid(){
 
     let containers = document.querySelectorAll(".column");
 
+    //faire apparaitre toute les cases
     containers.forEach(function(e){
 
         for (i=0; i<=16; i++){
@@ -22,5 +25,13 @@ function spawnGrid(){
     
     console.log(containers);
 }
+
+let boutonDimension = document.querySelector(".boutonDimension");
+
+boutonDimension.addEventListener("click", () => {
+    let value = prompt("quel dimension souhaitez-vous?");
+
+    
+})
 
 spawnGrid();

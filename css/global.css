@@ -3,10 +3,11 @@
     height: 20px;
     border: 1px solid black;
 }
+.cadrier:hover{
+    background-color: blue;
+}
 
 .column{
-    width: 21px;
-    height: 336px;
     display: flex;
     flex-direction: column;
     
@@ -15,9 +16,19 @@
 .container{
     display: flex;
     flex-direction: row;
-    width: 336px;
+
+    border: 1px solid black;
 }
-body{
+main{
     display: flex;
     justify-content: center;
+}
+body{
+    text-align: center;
+}
+.boutonDimension{
+    align-self: center;
+    height: 20px;
+    margin: 10px ;
+    
 }
