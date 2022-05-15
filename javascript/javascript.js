@@ -1,5 +1,5 @@
 let spawnGridValidateur = true;
-let valeurBase = 16
+let valeurBase = 16;
 //gestion de la grid
 function spawnGrid(v = 16){
     //faire apparaitre les containers verticale
@@ -24,11 +24,26 @@ function spawnGrid(v = 16){
         }
 
     })
+    //prendre la valeur de la grille actuel
     valeurBase = v;
+    //mettre fin à la function
     spawnGridValidateur = false;
     console.log(containers);
+
+    // event listener pour le coloriage
+    let coloriage = document.querySelectorAll(".cadrier");
+    console.log(coloriage);
+    coloriage.forEach(function(e){
+
+    e.addEventListener("mousemove", () => {
+
+        e.classList.add("noir")
+    
+    });
+})
 }
 
+// bouton pour changer les dimensions de la grille
 let boutonDimension = document.querySelector(".boutonDimension");
 
 boutonDimension.addEventListener("click", () => {
